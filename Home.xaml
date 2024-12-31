@@ -1,0 +1,63 @@
+﻿<Window x:Class="GestionReservation.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionReservation"
+        mc:Ignorable="d"
+        Title="Home" Height="450" Width="800">
+    <Grid>
+        <DockPanel>
+            <ToolBar DockPanel.Dock="Top" Background="LightGray" Height="80">
+                <!-- Header Section -->
+                <Grid Background="#2A8CC7" Height="80" Width="775">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+
+
+                    <!-- Profile Icon and Search Bar -->
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0">
+                        <!-- Profile Icon -->
+                        <Image x:Name="admin" Source="C:\Users\boussyf\Downloads\user_1077114.png" Width="40" Height="40" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <!-- Search Bar -->
+                    <Image HorizontalAlignment="Left" Height="24" Margin="11,0,0,0" VerticalAlignment="Center" Width="26" Source="C:\Users\boussyf\Downloads\search_10025455.png" Stretch="Fill"/>
+                    <Border HorizontalAlignment="Left" Margin="57,0,0,0" VerticalAlignment="Center" Width="245" Height="23" CornerRadius="10" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" BorderThickness="1">
+                        <TextBox TextWrapping="Wrap" Text="Search for ..." VerticalAlignment="Center" Background="Transparent" Foreground="#FFC2B6B6" BorderThickness="0" Padding="5" Height="30" Margin="-2,0,2,0"/>
+                    </Border>
+
+                    <!-- Admin Name Label -->
+                    <Label Grid.Column="1" Content="Admin" HorizontalAlignment="Left" Margin="356,34,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="14" FontWeight="Bold" Grid.ColumnSpan="2"/>
+                </Grid>
+            </ToolBar>
+
+            <!-- Sidebar -->
+            <StackPanel DockPanel.Dock="Left" Width="150">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+                </StackPanel.Background>
+                <!-- Logo Image at the top of the Sidebar -->
+                <Image Source="C:\Users\boussyf\Downloads\logo.jpeg" Width="86" Height="55" HorizontalAlignment="Center" Margin="10,10,10,20"/>
+                <Button x:Name="home" Content="Home" FontFamily="Arial Black" FontSize="14" Height="24" Width="122" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" Foreground="White" BorderBrush="White" Click="home_Click" RenderTransformOrigin="0.553,-1.915"/>
+                <!-- Sidebar Buttons -->
+                <Button x:Name="dash" Content="Dashboard" FontFamily="Arial Black" FontSize="14" Height="24" Width="122" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="White" BorderBrush="White" Click="dash_Click" Margin="0,20,0,0"/>
+                <Button x:Name="client" Content="Client" FontFamily="Arial Black" FontSize="14" Height="24" Width="122" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="White" BorderBrush="White"   Click="client_Click" Margin="0,20,0,0"/>
+                <Button x:Name="room" Content="Room" FontFamily="Arial Black" FontSize="14" Height="24" Width="122" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="White" BorderBrush="White" Click="room_Click" Margin="0,20,0,0"/>
+                <Button x:Name="reservation" Content="Reservation" FontFamily="Arial Black" FontSize="14" Height="24" Width="122" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="White" BorderBrush="White"  Click="reservation_Click" Margin="0,20,0,0"/>
+                <Button x:Name="logout" Content="LogOut" FontFamily="Arial Black" FontSize="14" Height="24" Width="122" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="White" BorderBrush="White" Margin="0,20,0,0" Click="logout_Click"/>
+            </StackPanel>
+
+
+            <!-- Main Content Area -->
+            <ContentControl Name="MainContent" Background="White" />
+           
+
+
+        </DockPanel>
+    </Grid>
+</Window>

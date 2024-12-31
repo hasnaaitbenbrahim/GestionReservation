@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddClient.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddReservation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddRoom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ClientControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DashboardControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HomeControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReservationControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RoomControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddClient.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddReservation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddRoom.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ClientControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DashboardControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HomeControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReservationControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RoomControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
